@@ -1,0 +1,45 @@
+{
+  "name": "lucidus",
+  "displayName": "Lucidus",
+  "description": "Lucidus Language Support",
+  "version": "0.0.1",
+  "publisher": "amukh1",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "colors": [
+      {
+        "id": "lucidus.operator",
+        "description": "Lucidus Operator Color",
+        "defaults": {
+          "dark": "#FFD700",
+          "light": "#FFD700"
+        }
+      }, 
+      {
+        "id": "storage.modifier.lucidus",
+        "description": "Lucidus Modifier Color",
+        "defaults": {
+          "dark": "#FFD700",  
+          "light": "#FFD700"
+        }
+      }
+    ],
+    "languages": [{
+      "id": "lucidus",
+      "aliases": ["Lucidus", "lucidus"],
+      "extensions": [".lucid",".luci",".luc",".lucy"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lucidus",
+      "scopeName": "source.lucidus",
+      "path": "./syntaxes/lucidus.tmLanguage.json"
+    }]
+  }
+}
